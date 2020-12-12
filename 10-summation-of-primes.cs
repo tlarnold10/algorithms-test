@@ -31,10 +31,11 @@ namespace summation
                     }
                 }
                 num = 0;
+                Console.WriteLine(x);
             }
             foreach(var prime in primes)
             {
-                Console.WriteLine(prime);
+                // Console.WriteLine(prime);
                 sum += prime;
             }
             Console.WriteLine(sum);
