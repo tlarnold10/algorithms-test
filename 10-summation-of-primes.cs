@@ -7,9 +7,10 @@ namespace summation
     {
         public static void Main(string[] args)
         {
-            int min = 10;
+            int min = 2000000;
             List<int> primes = new List<int>();
             int num = 0;
+            int sum = 0;
             for(int x=2; x<=min; x++)
             {
                 for(int y=2; y<=x; y++)
@@ -20,7 +21,7 @@ namespace summation
                         num = num+1;
                         break;
                     }
-                    else if(y%x==0)
+                    else if(x%y!=0)
                     {
                         continue;
                     }
@@ -29,13 +30,14 @@ namespace summation
                         break;
                     }
                 }
-                // num = 0;
-                Console.WriteLine(x.ToString());
+                num = 0;
             }
             foreach(var prime in primes)
             {
                 Console.WriteLine(prime);
+                sum += prime;
             }
+            Console.WriteLine(sum);
         }
     }
 }
