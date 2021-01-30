@@ -17,8 +17,9 @@ namespace data
         public static void Main(string[] args)
         {
             // FunArray();
-            string[] some_words = {"hey", "would", "you", "cuddle", "me"};
-            FunWithLinkedList(some_words);
+            // string[] some_words = {"hey", "would", "you", "cuddle", "me"};
+            // FunWithLinkedList(some_words);
+            FunWithStacks();
         }
 
         public static void FunArray()
@@ -48,6 +49,27 @@ namespace data
             foreach (string word in comment)
             {
                 Console.WriteLine(word);
+            }
+        }
+
+        public static void FunWithStacks()
+        {
+            Stack<string> exampleStack = new Stack<string>();
+            exampleStack.Push("The");
+            exampleStack.Push("bees");
+            exampleStack.Push("are");
+            exampleStack.Push("in");
+            exampleStack.Push("the");
+            foreach(string str in exampleStack)
+            {
+                Console.WriteLine(str);
+            }
+            exampleStack.Push("trap");
+            exampleStack.Push("!");
+            exampleStack.Pop();
+            foreach(string str in exampleStack)
+            {
+                Console.WriteLine(str);
             }
         }
     }
