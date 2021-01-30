@@ -22,5 +22,8 @@ def linked_lists():
     llist.pop()
     print(llist)
 
+def fun_stacks():
+    
+
 # fun_arrays()
-linked_lists()
+# linked_lists()

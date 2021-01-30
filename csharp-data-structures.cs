@@ -1,5 +1,5 @@
 // arrays - done
-// linked lists
+// linked lists - done
 // stacks
 // queues
 // hash tables
@@ -16,7 +16,7 @@ namespace data
     {
         public static void Main(string[] args)
         {
-            FunArray();
+            // FunArray();
             string[] some_words = {"hey", "would", "you", "cuddle", "me"};
             FunWithLinkedList(some_words);
         }
@@ -33,6 +33,18 @@ namespace data
         public static void FunWithLinkedList(string[] words)
         {
             LinkedList<string> comment = new LinkedList<string>(words);
+            foreach (string word in comment)
+            {
+                Console.WriteLine(word);
+            }
+            comment.RemoveLast();
+            comment.RemoveFirst();
+            foreach (string word in comment)
+            {
+                Console.WriteLine(word);
+            }
+            comment.AddFirst("bitchin");
+            comment.AddLast("balls");
             foreach (string word in comment)
             {
                 Console.WriteLine(word);
