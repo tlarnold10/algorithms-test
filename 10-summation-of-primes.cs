@@ -36,7 +36,7 @@ namespace summation
             foreach(var prime in primes)
             {
                 // Console.WriteLine(prime);
-                sum += prime;
+                sum = sum + prime;
             }
             Console.WriteLine(sum);
         }
