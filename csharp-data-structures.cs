@@ -1,7 +1,7 @@
 // arrays - done
 // linked lists - done
-// stacks
-// queues
+// stacks - done
+// queues - done
 // hash tables
 // trees
 // heaps
@@ -9,6 +9,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace data
 {
@@ -19,7 +20,9 @@ namespace data
             // FunArray();
             // string[] some_words = {"hey", "would", "you", "cuddle", "me"};
             // FunWithLinkedList(some_words);
-            FunWithStacks();
+            // FunWithStacks();
+            // FunWithQueues();
+            FunWithHashTables();
         }
 
         public static void FunArray()
@@ -70,6 +73,40 @@ namespace data
             foreach(string str in exampleStack)
             {
                 Console.WriteLine(str);
+            }
+        }
+
+        public static void FunWithQueues()
+        {
+            Queue<string> exampleQueue = new Queue<string>();
+            exampleQueue.Enqueue("The");
+            exampleQueue.Enqueue("bees");
+            exampleQueue.Enqueue("are");
+            exampleQueue.Enqueue("in");
+            exampleQueue.Enqueue("the");
+            foreach(string str in exampleQueue)
+            {
+                Console.WriteLine(str);
+            }
+            exampleQueue.Enqueue("trap");
+            exampleQueue.Enqueue("!");
+            exampleQueue.Dequeue();
+            foreach(string str in exampleQueue)
+            {
+                Console.WriteLine(str);
+            }
+        }
+
+        public static void FunWithHashTables()
+        {
+            Hashtable ht = new Hashtable();
+            ht.Add("hello", "world");
+            ht.Add("stuff", "things");
+            ICollection keys = ht.Keys;
+            foreach (string key in keys)
+            {
+                Console.WriteLine("Key: " + key);
+                Console.WriteLine("Value: " + ht[key]);
             }
         }
     }
