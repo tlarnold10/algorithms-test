@@ -123,5 +123,3 @@ namespace data
             }
             Console.WriteLine(y);
         }
-    }
-}
