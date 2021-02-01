@@ -2,7 +2,7 @@
 // linked lists - done
 // stacks - done
 // queues - done
-// hash tables
+// hash tables - done
 // trees
 // heaps
 // graphs
@@ -15,6 +15,7 @@ namespace data
 {
     class dataStructures
     {
+        public static int x = 5;
         public static void Main(string[] args)
         {
             // FunArray();
@@ -22,7 +23,8 @@ namespace data
             // FunWithLinkedList(some_words);
             // FunWithStacks();
             // FunWithQueues();
-            FunWithHashTables();
+            // FunWithHashTables();
+            FunWithRecursion();
         }
 
         public static void FunArray()
@@ -108,6 +110,18 @@ namespace data
                 Console.WriteLine("Key: " + key);
                 Console.WriteLine("Value: " + ht[key]);
             }
+        }
+
+        public static void FunWithRecursion()
+        {
+            int y = 20;
+            if(x <= 20)
+            {
+                Console.WriteLine(x);
+                x++;
+                FunWithRecursion();
+            }
+            Console.WriteLine(y);
         }
     }
 }
