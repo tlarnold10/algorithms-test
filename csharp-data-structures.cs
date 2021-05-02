@@ -15,7 +15,11 @@ namespace data
 {
     class dataStructures
     {
+<<<<<<< HEAD
         public static int x = 5;
+=======
+        public static int x= 5;
+>>>>>>> c02c04d2bc534dac32a5003b65dd53a7aa4cbc36
         public static void Main(string[] args)
         {
             // FunArray();
@@ -24,7 +28,11 @@ namespace data
             // FunWithStacks();
             // FunWithQueues();
             // FunWithHashTables();
+<<<<<<< HEAD
             FunWithRecursion();
+=======
+            FunWithRecursions();
+>>>>>>> c02c04d2bc534dac32a5003b65dd53a7aa4cbc36
         }
 
         public static void FunArray()
@@ -112,6 +120,7 @@ namespace data
             }
         }
 
+<<<<<<< HEAD
         public static void FunWithRecursion()
         {
             int y = 20;
@@ -123,3 +132,18 @@ namespace data
             }   
             Console.WriteLine(y);
         }
+=======
+        public static void FunWithRecursions()
+        {
+            int y = 20;
+            if(x <= y)
+            {
+                Console.WriteLine(x);
+                x++;
+                FunWithRecursions();
+            }
+            Console.WriteLine(y);
+        }
+    }
+}
+>>>>>>> c02c04d2bc534dac32a5003b65dd53a7aa4cbc36
